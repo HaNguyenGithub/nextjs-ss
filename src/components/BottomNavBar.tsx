@@ -7,20 +7,44 @@ import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
-import { useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import AudioPlayer from 'react-audio-player';
-import { Howl } from 'howler';
-
+import { Howl, Howler } from 'howler';
 export default function BottomAppBar() {
 
-    const [isPlaying, setIsPlaying] = useState(false);
-    const audio = React.useRef();
-    const handleButtonClick = () => {
-      setIsPlaying(!isPlaying);
-    }
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [playIcon, setPlayIcon] = useState('/play.svg');
+  const soundRef = useRef<Howl | null>(null);
 
-    const testPause = () => {}
+    useEffect(() => {
+      soundRef.current = new Howl({
+      src: ['/remider.mp3'],
+      onplay: () => {
+        setIsPlaying(true);
+        setPlayIcon('/pause.svg');
+      },
+      onpause: () => {
+        setPlayIcon('/play.svg');
+        setIsPlaying(false);
+      },
+    });
 
+    return () => {
+      soundRef.current?.unload();
+    };
+  }, []);
+
+    const handleTogglePlay = () => {
+      
+      if (!isPlaying) {
+        
+        soundRef.current?.play();
+      } else {
+        
+        soundRef.current?.pause();
+      }
+    };
+    
   return (
     <React.Fragment>
       <CssBaseline />
@@ -47,29 +71,8 @@ export default function BottomAppBar() {
           <Typography  component="div" sx={{fontSize:"10px"}}>14/5/2023 22:00:37</Typography>
           </Box>
           <Box sx={{marginTop:"5px", color: "transparent"}}>
-            <button id='btnPlay' onClick={handleButtonClick}>
-                    {
-                    isPlaying ? (
-                      <>
-                      <img src="/pause.svg" alt="PauseIcon" /> 
-                      <AudioPlayer
-                        src="/remider.mp3"
-                        autoPlay={isPlaying}
-                        
-                      />
-                      </>
-                    
-                    ) : (
-                      <>
-                      <AudioPlayer
-                        src="/remider.mp3"
-                        onPause={testPause}
-                      />
-                        <img src="/play.svg" alt="Play Icon" />
-                      </>
-                    
-                    )
-                    }
+            <button id='btnPlay' onClick={handleTogglePlay}>
+            <img src={playIcon} alt={isPlaying ? 'Pause' : 'Play'} />
             </button>
             
           </Box>   
