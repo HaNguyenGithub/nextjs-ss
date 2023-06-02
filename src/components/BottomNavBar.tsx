@@ -6,9 +6,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
 import { useEffect, useState, useRef } from 'react';
-import AudioPlayer from 'react-audio-player';
 import { Howl, Howler } from 'howler';
 export default function BottomAppBar() {
 
