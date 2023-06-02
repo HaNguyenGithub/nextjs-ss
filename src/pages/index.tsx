@@ -1,12 +1,8 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google';
 import Head from 'next/head';
 import React from 'react';
-import { AppBar, BottomNavigation, BottomNavigationAction, Box, Container, CssBaseline, IconButton, Paper, Toolbar, Typography } from '@mui/material';
-import HomeIcon from '@mui/icons-material/Home';
+import { Box, Container, CssBaseline, IconButton, Paper, Toolbar, Typography } from '@mui/material';
 import NavBar from '@/components/NavBar';
 import BNavBar from '@/components/BottomNavBar';
-import { Avatar } from '@mui/material';
 import Grid from '@mui/material/Grid';
 
 const styles = {
