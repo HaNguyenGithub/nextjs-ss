@@ -36,8 +36,8 @@ export default function BottomAppBar() {
             <Box width={50} height={50}>
               <Image
                 src="/album.png"
-                  width={100}
-                  height={100}
+                  width={50}
+                  height={50}
                   style={{ borderRadius:'8px' }}
                   alt="album-cover"/>
           </Box>
@@ -46,7 +46,7 @@ export default function BottomAppBar() {
           <Typography  component="div" sx={{fontSize:"15px"}}>Wan Pis Cecile</Typography>
           <Typography  component="div" sx={{fontSize:"10px"}}>14/5/2023 22:00:37</Typography>
           </Box>
-          <Box sx={{marginTop:"5px"}}>
+          <Box sx={{marginTop:"5px", color: "transparent"}}>
             <button id='btnPlay' onClick={handleButtonClick}>
                     {
                     isPlaying ? (
