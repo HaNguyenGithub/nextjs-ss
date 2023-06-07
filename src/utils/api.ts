@@ -4,7 +4,6 @@ export async function fetchDataApi() {
     if (!apiUrl) {
       throw new Error('API URL is not defined');
     }
-    // const response = await fetch('https://mobile-s2e.singsing.net/record/647874c7e2b001b63b78acdf');
     const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error('Failed to fetch song data');
