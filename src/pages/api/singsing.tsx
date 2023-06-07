@@ -13,6 +13,8 @@ export default async function GET(req: NextApiRequest, res: NextApiResponse){
         }
     const data = await apiResponse.json();
     const { song, link_play } = data.data;
+    // const test = data.data.song.name;
+    console.log(song);
     res.status(200).json({link_play: link_play, song: song });
 } catch (error) {
     console.error('Error fetching data:', error);
