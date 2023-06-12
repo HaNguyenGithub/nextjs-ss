@@ -1,4 +1,6 @@
-@import "../styles/record/";
+@import "../styles/record/record.module.css";
+@import "../styles/record/nbarid.module.css";
+@import "../styles/record/bnbarid.module.css";
 
 @tailwind base;
 @tailwind components;
