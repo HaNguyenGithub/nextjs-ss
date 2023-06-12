@@ -1,0 +1,126 @@
+/* MAIN */
+.main {
+  max-width: 444px;
+  max-height: fit-content;
+  padding-left: 0;
+  padding-right: 0;
+  font-family:  "Roboto","Helvetica","Arial",sans-serif;
+}
+
+/* POINTS */
+.points{
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: block;
+  padding-top: 24px;
+  background: url(../../../public/bg-score-top.png),#000000;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.points div{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.points div p:nth-child(1), 
+.points div p:nth-child(3){
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.points div p:nth-child(2){
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 0.00938em;
+  background: linear-gradient(257.24deg,#C5FF4A -39.37%, #21F2FF 121.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+
+.points div p:nth-child(4){
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.00938em;
+  background: linear-gradient(257.24deg,#C5FF4A 39.37%, #FFC000 70.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+
+.points div p:nth-child(4) img{
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 4px;
+}
+
+.points p{
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* MAP */
+
+.map{
+  padding-left: 24px;
+  padding-right: 24px;
+  background: #000000;
+}
+
+.map p {
+  font-weight: 50;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map div:nth-child(2){
+  margin-bottom: 32px;
+  width: 100;
+  display: flex;
+  overflow: auto;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  font-weight: 700;
+}
+
+.map div:nth-child(2) img{
+  height: 200px;
+  object-fit: cover;
+  max-width: none;
+  overflow: clip;
+  overflow-x: scroll;
+}
+
+.map div:nth-child(3) {
+  width: 100;
+  overflow: auto;
+}
+
+.map div:nth-child(4) {
+  padding-top: 16px;
+  padding-bottom: 24px;
+  overflow: auto;
+  font-weight: 700;
+}
+
+.map div:nth-child(4) img{
+  height: 200px;
+  object-fit: cover;
+  max-width: none;
+  overflow: clip;
+  overflow-x: scroll;
+}

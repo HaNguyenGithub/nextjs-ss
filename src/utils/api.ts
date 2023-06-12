@@ -4,14 +4,16 @@ export async function fetchDataApi() {
     if (!apiUrl) {
       throw new Error('API URL is not defined');
     }
+
     const response = await fetch(apiUrl);
     if (!response.ok) {
-      throw new Error('Failed to fetch song data');
+      throw new Error('Failed to fetch data');
     }
     const data = await response.json();
     return data;
+
   } catch (error) {
-    console.error('Error fetching song data:', error);
+    console.error('Error fetching data:', error);
     throw error;
   }
 }
