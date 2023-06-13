@@ -1,5 +1,4 @@
-.main{
-    max-width: 444px;
+.mainTop{
     padding-left: 18.4px;
     padding-right: 18.4px;
     padding-top: 17.6px;
@@ -12,7 +11,7 @@
     box-sizing: inherit;
 }
 
-.main p {
+.mainTop p {
     font-size: 11px;
     font-weight: 400;
     color: #C7C7CC;

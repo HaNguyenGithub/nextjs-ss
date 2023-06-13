@@ -40,7 +40,7 @@ export default function NavBar() {
   return (
     <>
       <Box>
-        <div className={navbar.main}>
+        <div className={navbar.mainTop}>
           <div className={navbar.user}>
             <Box className={navbar.avatar}>
               <img src={avatar} alt="avatar" />

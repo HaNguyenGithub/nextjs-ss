@@ -59,7 +59,7 @@ export default function BNavBar() {
 
   return (
     <>
-      <div className={bnavbar.main}>
+      <div className={bnavbar.mainBottom}>
         <div className={bnavbar.audio}>
             <audio ref={audioRef} src={getLink} onEnded={handleAudioEnded}/>
         </div>
