@@ -1,4 +1,5 @@
 .main{
+    max-width: 444px;
     display: flex;
     flex-direction: column;
     justify-content: center;
