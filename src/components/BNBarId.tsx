@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import bnavbar from "../styles/record/bnbarid.module.css";
+import bnavbar from "../styles/bnbarid.module.css";
 import { Button } from '@mui/material';
 import { useEffect, useRef, useState } from "react";
 import { fetchDataApi } from "@/utils/api";

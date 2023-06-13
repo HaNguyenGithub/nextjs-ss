@@ -16,7 +16,7 @@
   width: 100%;
   display: block;
   padding-top: 24px;
-  background: url(../../../public/bg-score-top.png),#000000;
+  background: url(/bg-score-top.png),#000000;
   background-repeat: no-repeat;
   background-size: 100%;
 }
