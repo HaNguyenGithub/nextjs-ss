@@ -1,6 +1,6 @@
 /* MAIN */
 .main {
-  max-width: 444px;
+  max-width: 444px  !important;
   max-height: fit-content;
   padding-left: 0;
   padding-right: 0;
