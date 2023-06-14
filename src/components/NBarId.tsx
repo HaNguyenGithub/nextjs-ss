@@ -3,19 +3,22 @@ import navbar from "../styles/Top.module.css";
 import { useEffect, useState } from "react";
 import { fetchDataApi } from "@/utils/api";
 import { format } from "date-fns";
+import { useRouter } from 'next/router';
 
 export default function NavBar() {
   const [userName, setUserName] = useState<string>("");
   const [getDate, setDate] = useState<any>("");
   const [avatar, setAvatar] = useState<any>("");
+  const router = useRouter();
+  const id = router.query.id;
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [id]);
 
   //start api
   const fetchData = async () => {
     try {
-      const getData = await fetchDataApi();
+      const getData = await fetchDataApi(id);
       //get api
       //date
       const timestamp = getData.data.uploaded_at;

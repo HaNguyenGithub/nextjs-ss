@@ -5,6 +5,7 @@ import NavBar from "@/components/NBarId";
 import BNavBar from "@/components/BNBarId";
 import { fetchDataApi } from "../../utils/api";
 import Head from "next/head";
+import { useRouter } from 'next/router';
 
 export default function Record() {
   const [finalScore, setFinalScore] = useState<any>("");
@@ -13,14 +14,15 @@ export default function Record() {
   const [timbre, setTimbre] = useState<any>("");
   const [songName, setSongName] = useState<any>("");
   const title = `Record: ${songName}`;
+  const router = useRouter();
+  const id = router.query.id;
   //API start
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [id]);
   const fetchData = async () => {
     try {
-      // const response = await fetch(process.env.API_URL);
-      const getData = await fetchDataApi();
+      const getData = await fetchDataApi(id);
       //get api
       const {
         score,

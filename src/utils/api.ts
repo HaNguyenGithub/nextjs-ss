@@ -1,10 +1,9 @@
-export async function fetchDataApi() {
+export async function fetchDataApi(id: any) {
   try {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}${id}`;
     if (!apiUrl) {
       throw new Error('API URL is not defined');
     }
-    console.log(id);
     const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error('Failed to fetch data');

@@ -4,6 +4,7 @@ import { Button } from '@mui/material';
 import { useEffect, useRef, useState } from "react";
 import { fetchDataApi } from "@/utils/api";
 import { format } from "date-fns";
+import { useRouter } from 'next/router';
 
 export default function BNavBar() {
     const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -12,10 +13,11 @@ export default function BNavBar() {
     const [userData, setUserData] = useState<any>("");
     const [getLink, setLink] = useState<string>(" ");
     const [getDate, setDate] = useState<any>("");
-
+    const router = useRouter();
+    const id = router.query.id;
     useEffect(() => {
       fetchData();
-    }, []);
+    }, [id]);
     
     const PlayingSong = () => {
         if(audioRef.current){
@@ -36,7 +38,7 @@ export default function BNavBar() {
     //start api
   const fetchData = async () => {
     try {
-      const getData = await fetchDataApi();
+      const getData = await fetchDataApi(id);
       const { name, thumbnail } = getData.data.song;
       setSongData({ name, thumbnail });
       setUserData(getData.data.user.name);
