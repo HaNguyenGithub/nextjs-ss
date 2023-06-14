@@ -4,7 +4,7 @@ export async function fetchDataApi() {
     if (!apiUrl) {
       throw new Error('API URL is not defined');
     }
-
+    console.log(id);
     const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error('Failed to fetch data');
