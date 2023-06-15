@@ -11,7 +11,7 @@
     margin: auto;
     max-width: 1228px;
     overflow: hidden;
-    align-items: center;
+    align-items: center !important;
     display: flex;
    flex-direction: column;
 }
