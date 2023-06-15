@@ -43,6 +43,7 @@
     border-radius: 34px;
     object-fit: cover;
     overflow: clip;
+    filter: grayscale(100%);
 }
 
 .secondRow{
@@ -61,6 +62,8 @@
     height: 156px;
     border-radius: 34px;
     object-fit: cover;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
 }
 
 .split{

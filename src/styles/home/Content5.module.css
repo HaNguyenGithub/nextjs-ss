@@ -1,0 +1,54 @@
+.ourAdvisor{
+    width: 100%;
+    padding-top: 8.8rem;
+    padding-bottom: 8.8rem;
+    min-height: 1000px;
+    background: #0b0e11;
+}
+
+.container{
+    position: relative;
+    margin: auto;
+    max-width: 1228px;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+   flex-direction: column;
+}
+
+.team{
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.frame{
+    width: 25%;
+    flex: 0 0 auto;
+    padding-right: 7px;
+    padding-left: 7px;
+    margin-top: 25px;
+}
+
+.frame div{
+    background: rgba(153, 153, 153, .13);
+    border-radius: 0 0 13px 13px;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.frame div h4{
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.frame div p{
+    color: #ffc000;
+    text-align: center;
+}
