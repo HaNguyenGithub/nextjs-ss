@@ -1,8 +1,8 @@
 import { Box, Container, CssBaseline, Grid, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import record from "../../styles/Content.module.css";
-import NavBar from "@/components/NBarId";
-import BNavBar from "@/components/BNBarId";
+import record from "../../styles/record/Content.module.css";
+import NavBar from "@/components/record/Navbar";
+import BNavBar from "@/components/record/BottomNavBar";
 import { fetchDataApi } from "../../utils/api";
 import Head from "next/head";
 import { useRouter } from 'next/router';

@@ -1,0 +1,17 @@
+.top{
+    background: #181a20;
+    padding-top: 8px;
+    height: 60px;
+}
+
+.nav{
+    position: relative;
+    margin: auto;
+    padding-right: var(--bs--gutter-x,.75rem);
+    padding-left: var(--bs--gutter-x,.75rem);
+    max-width: 1228px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+}

@@ -1,8 +1,6 @@
-@import "../styles/Content.module.css";
-@import "../styles/Top.module.css";
-@import "../styles/Bottom.module.css";
-
+@import "../styles/record/Top.module.css";
+@import "../styles/record/Content.module.css";
+@import "../styles/record/Bottom.module.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind styles/record;

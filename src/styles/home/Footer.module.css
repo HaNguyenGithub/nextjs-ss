@@ -1,0 +1,48 @@
+.footer{
+    background: #0b0e11;
+    width: 100%;
+    min-height: 390px;
+    color: #fff;
+    padding-top: 9.6rem;
+}
+
+.cotainer{
+    position: relative;
+    margin: auto;
+    max-width: 1228px;
+    overflow: hidden;
+}
+
+.box{
+   align-items: flex-start;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}   
+
+.box1{
+    max-width: 100%;
+}
+
+.box1 p{
+    padding-top: 1.5rem;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+}
+
+.social a{
+    width: 42px;
+    height: 42px;
+    margin: 5px;
+    padding: 3px;
+    justify-content: flex-start;
+    border-radius: 50%;
+}
+
+.doc{
+    margin-top: 25px;
+}

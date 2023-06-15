@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import navbar from "../styles/Top.module.css";
+import navbar from "../../styles/record/Top.module.css";
 import { useEffect, useState } from "react";
 import { fetchDataApi } from "@/utils/api";
 import { format } from "date-fns";

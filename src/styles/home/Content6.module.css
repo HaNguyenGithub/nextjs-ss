@@ -1,0 +1,80 @@
+.backers{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 8.8rem;
+    padding-bottom: 8.8rem;
+    background: #181a20;
+}
+
+.container{
+    position: relative;
+    margin: auto;
+    max-width: 1228px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    font-size: 1.6;
+}
+
+.container p {
+    font-size: 6.8rem;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10rem;
+    font-family: "Montserrat"," Saira", sans-serif;
+}
+
+.firstRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.firstRow a{
+    width: 25%;
+}
+
+.firstRow img{
+    height: 156px;
+    border-radius: 34px;
+    object-fit: cover;
+    overflow: clip;
+}
+
+.secondRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+.secondRow a{
+    width: 25%;
+}
+
+.secondRow img{
+    height: 156px;
+    border-radius: 34px;
+    object-fit: cover;
+}
+
+.split{
+    height: 300px;
+}
+
+.boxPartners{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxPartners a{
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    width: 25%;
+}
