@@ -12,8 +12,8 @@
     max-width: 1228px;
     overflow: hidden;
     align-items: center !important;
-    display: flex;
-   flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 .team{
@@ -21,7 +21,6 @@
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    box-sizing: border-box;
 }
 
 .frame{

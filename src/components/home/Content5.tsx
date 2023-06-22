@@ -1,9 +1,15 @@
 import { Container, Typography, Box } from "@mui/material";
 import content from "../../styles/home/Content5.module.css";
-export default function Content6() {
+export default function Content5() {
   const data = [
-    { name: "NGOC NGUYEN", nation: "Vietnam", img_src: "/advisor/t-1.png" },
-    { name: "THAO DINH", nation: "Vietnam", img_src: "/advisor/t-2.png" },
+    { name: "NGOC NGUYEN", 
+      nation: "Vietnam", 
+      img_src: "/advisor/t-1.png" 
+    },
+    { name: "THAO DINH", 
+      nation: "Vietnam", 
+      img_src: "/advisor/t-2.png" 
+    },
     {
       name: "SUHARTO PALAWAN",
       nation: "Philippines",

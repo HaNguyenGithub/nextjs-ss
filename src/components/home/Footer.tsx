@@ -6,30 +6,32 @@ export default function Footer() {
       <footer className={footer.footer}>
         <Container  className={footer.container}>
           <Container  className={footer.box}>
-            <Box className={footer.box1}>
-              <a href="">
+            <div>
+              <div className={footer.logo}>
                 <img src="/logo_singsing2.svg" />
-              </a>
+              </div>
+              <div>
               <Typography component="p">© SingSing 2021</Typography>
-            </Box>
-            <Box className={footer.box2}>
-              <Typography component="h3">Contact</Typography>
-              <Typography component="p">Email: contact@singsing.net</Typography>
-            </Box>
-            <Box className={footer.box3}>
+              </div>
+            </div>
+
+              <div>
+                <Typography component="h3">Contact</Typography>
+                <Typography component="p">Email: contact@singsing.net</Typography>
+              </div>
+            
+            <div>
               <div className={footer.social}>
-                  <a href="">
+                  <a href="https://www.facebook.com/SingSingGlobal">
                     <img src="/icon-fb-bw.svg" />
                   </a>
-                    <a href="">
+                  <a href="https://twitter.com/singsingnetwork">
                       <img src="/icon-twitter-bw.svg" />
-                    </a>
-
-                    <a href="">
+                  </a>
+                  <a href="https://t.me/singsingchannel">
                       <img src="/icon-tele-bw.svg" />
-                    </a>
-
-                  <a href="">
+                  </a>
+                  <a href="https://r.dsc.gg/singsing">
                     <img src="/icon-discord-bw.svg" />
                   </a>
               </div>
@@ -41,7 +43,7 @@ export default function Footer() {
                   <Typography component="p">Privacy Policy</Typography>
                 </a>
               </div>
-            </Box>
+            </div>
           </Container>
         </Container>
       </footer>

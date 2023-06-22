@@ -1,0 +1,120 @@
+.singers{
+    width: 100%;
+    min-height: 100vh;
+    background: #0b0e11;
+    padding-top: 8.8rem;
+    padding-bottom: 8.8rem;
+    box-sizing: border-box;
+    font-family: 'Montserrat' ,'Saira' ,sans-serif;
+    line-height: 1.5;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    margin: auto;
+    max-width: 1228px;
+    overflow: hidden;
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.container p:first-child {
+    font-size:7.8rem;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10rem;
+    align-items: center;
+}
+
+.rows{
+    margin-top: 5rem;
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.frame{
+    flex: 0 0 auto;
+    width: 12.5%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 2.5rem;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.frame img{
+    width: 100%;
+    border-radius: 34px 34px 0 0;
+    filter: grayscale(100%);
+    vertical-align: middle;
+}
+
+.frame div{
+    min-height: 80px;
+    width: 100%;
+    background: rgba(153, 153, 153, .13);
+    border-radius: 0 0 34px 34px;
+    text-align: center;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.frame div h3{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+
+}
+
+.frame div h2{
+    color: #ffc000;
+    font-size: 2.3rem;
+    font-weight: 900;
+    white-space: nowrap;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.frame div p{   
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 0;
+    padding-bottom: 1rem;
+    white-space: nowrap;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.content{
+    width: 100%;
+    padding-top: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    text-align: center;
+    color: #fff;
+}
+
+.content br{
+    display: none;
+}
+
+.content span{
+    color: #00d668;
+}

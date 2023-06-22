@@ -1,0 +1,68 @@
+.howtoplay{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0b0e11;
+    padding-top: 8.8rem;
+    padding-bottom: 8.8rem;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    margin: auto;
+    max-width: 1528px;
+    overflow: hidden;
+}
+
+.title{
+    scale: 1;
+    transition: all 2s ease-in-out;
+    font-size: 10.8;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+.phone{
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.phone > div{
+    transform: translateX(0);
+    transition: all .5 ease-in-out;
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative !important;
+}   
+
+.phone > div > img {
+    object-fit: contain;
+    height: 500px;
+    padding: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow: clip;
+}
+
+.phone > div > p{
+    font-size: 3.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 3rem;
+    line-height: 4.1rem;
+}
+
+.phone > div > div > img{
+    top: 25%;
+    right: -11%;
+    position: absolute !important;
+    box-sizing: border-box;
+}
