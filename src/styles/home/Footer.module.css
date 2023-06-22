@@ -22,8 +22,8 @@
 .box{
    align-items: flex-start !important;
    width: 100% !important;
-   display: flex;
-   flex-wrap: wrap;
+   display: flex !important;
+   flex-wrap: wrap !important;
 }   
 
 .box > div:first-child {
