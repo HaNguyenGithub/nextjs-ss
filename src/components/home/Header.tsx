@@ -6,10 +6,10 @@ export default function Header(){
     return(
         <header className={header.bg}>
             {/* Nav */}
+            <div>
             <div className={header.top}>
-                <Container className={header.nav}>
-                    <div className={header.link}>
-                        <a href="">
+                    <div>
+                        <a href="#" className={header.a}>
                             <img src="/logo_singsing.svg" alt="Logo SingSing"/>
                         </a>
                     </div>
@@ -26,7 +26,7 @@ export default function Header(){
                             </button>
                         </li>
                     </ul>
-                </Container>
+            </div>
             </div>
             {/*  End Nav */}
             {/* Image */}

@@ -50,11 +50,14 @@
     width: 100% !important;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1.8rem;
 }
 
 .frame{
     flex: 0 0 auto;
     width: 25%;
+    flex-basis: calc((100% / 12) * 3); 
     max-width: 100%;
     padding-right: 10px;
     padding-left: 10px;

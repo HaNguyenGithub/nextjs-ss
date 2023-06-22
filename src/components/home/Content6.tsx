@@ -50,16 +50,21 @@ export default function Content6() {
           <Typography component="p">STRONG BACKER</Typography>
           <div className={content.firstRow}>
             {data_backers_row_1.map((item, index) => (
-              <a href={item.link} key={index}>
+              <div>
+                <a href={item.link} key={index}>
                 <img src={item.src} alt={item.alt} />
-              </a>
+                </a>
+              </div>
+              
             ))}
           </div>
           <div className={content.secondRow}>
             {data_backers_row_2.map((item, index) => (
-              <a href={item.link} key={index}>
+             <div>
+             <a href={item.link} key={index}>
                 <img src={item.src} alt={item.alt} />
               </a>
+            </div>
             ))}
           </div>
           <div className={content.split}></div>

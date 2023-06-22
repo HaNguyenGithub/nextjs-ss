@@ -1,33 +1,35 @@
 /* Nav */
-.top{
-    background: #181a20;
+.bg{
+    position: relative;
+    background: #ffc002; 
+    min-height: 100vh;
+}
+.bg > div{
     padding-top: 8px;
     height: 60px;
-    box-sizing: border-box;
-    font-family: 'Montserrat','Saira',sans-serif;
-    font-size: 1.6rem;
+    background: #181a20;
 }
 
-.nav{
+.top{
     position: relative;
     margin: auto;
-    padding-right: var(--bs--gutter-x,.75rem);
-    padding-left: var(--bs--gutter-x,.75rem);
-    max-width: 1228px;
+    max-width: 1528px;
     overflow: hidden;
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    font-family: 'Montserrat','Saira',sans-serif;
+    font-size: 1.6rem;
+    padding-right: 85px;
+    padding-left: 85px;
 }
 
-.link{
+.top div:first-child{
     flex-grow: 1 !important;
 }
 
-.link a{
-    width: fit-content;
-    height: fit-content;
-    vertical-align: middle;
+.a{
+    align-self: flex-start!important;
 }
 
 .link a img{

@@ -30,8 +30,8 @@
 .firstRow{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    justify-content: center !important;
+    width: 100% !important;
 }
 
 .firstRow a{
@@ -46,12 +46,27 @@
     filter: grayscale(100%);
 }
 
+.firstRow div{
+    flex: 0 0 auto;
+    width: 25%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .secondRow{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    justify-content: center !important;
+    width: 100% !important;
     padding-top: 1.5rem;
+    
+}
+
+.secondRow div{
+    flex: 0 0 auto;
+    width: 25%;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .secondRow a{
