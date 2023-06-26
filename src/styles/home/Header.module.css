@@ -1,12 +1,7 @@
 /* Nav */
-.bg{
-    position: relative;
-    background: #ffc002; 
-    min-height: 100vh;
-}
-.bg > div{
+.bg > div:first-child{
     padding-top: 8px;
-    height: 60px;
+    height: 65px;
     background: #181a20;
 }
 
@@ -22,14 +17,11 @@
     font-size: 1.6rem;
     padding-right: 85px;
     padding-left: 85px;
+    padding-bottom: 10px;
 }
 
 .top div:first-child{
-    flex-grow: 1 !important;
-}
-
-.a{
-    align-self: flex-start!important;
+    flex-grow: 1!important;
 }
 
 .link a img{
@@ -96,10 +88,9 @@
 .selection{
     width: 100%;
     overflow: hidden;
-    height: 94vh;
+    height: 75vh;
     position: relative;
     box-sizing: border-box;
-    background: #ffc002;
 }
 
 .yellow{
@@ -156,10 +147,11 @@
     top: -10%;
     bottom: -10;
     right: -10%;
+    width: 65%;
 }
 
 .text{
-    height: 50%;
+    height: 10%;
     opacity: 1;
     transition: all 2s ease-out;
     position: absolute;
@@ -170,14 +162,14 @@
 }
 
 .text p{
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: -0.5rem;
 }
 
 .text h3{
-    font-size: 9.8rem;
+    font-size: 4.8rem;
     font-weight: 800;
     line-height: 9rem;
     margin: 0;
@@ -190,7 +182,7 @@
 }
 
 .text h2{
-    font-size: 12.6rem;
+    font-size: 5.5rem;
     font-weight: 800;
     line-height: 9rem;
     margin: 0;

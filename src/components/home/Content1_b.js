@@ -1,15 +1,33 @@
 import { Container, Typography, Box } from "@mui/material";
 import content from "../../styles/home/Content1.module.css";
-import React from 'react';
+import React, { useEffect } from 'react';
+import ScrollMagic from 'scrollmagic';
+import { TweenMax } from 'gsap';
+
 export default function Content1() {
+  useEffect(() => {
+    // init controller
+    const controller = new ScrollMagic.Controller();
+
+    // build scene
+    const scene = new ScrollMagic.Scene({
+      triggerElement: "#trigger1"
+    })
+    .setTween("#howtoplay", 0.5, {scale: 50}) // trigger a TweenMax.to tween
+    .addTo(controller);
+  }, []);
+
+
     return (
     <>
       <div className={content.howtoplay}>
         <Container className={content.container}>
-          <div id="trigger2"></div>
+        <div className="spacer s2"></div>
+          <div id="trigger1" class="spacer s0"></div>
           <div className={content.title} id="howtoplay">
             HOW TO PLAY
           </div>
+          <div className="spacer s2"></div>
           <div className={content.phone}>
             <div>
               <img src="/screenshot/1.png" />

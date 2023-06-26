@@ -28,7 +28,7 @@
 .phone{
     width: 100% !important;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .phone > div{

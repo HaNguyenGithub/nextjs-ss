@@ -46,6 +46,12 @@
     perspective: 660px;
     padding-left: 0 !important;
 }
+.mySwiper{
+    background: transparent;
+    width: 80%;
+    height: 100%;
+    
+}
 
 .micro{
     position: absolute;
@@ -54,25 +60,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 25%;
-    opacity: .4;
-    filter: blur(3px) grayscale(20%);
+    width: 100%;
+    height: 100%;
     transform: translateX(-130%) scale(.8);
-    z-index: 3;
 }
 
-.micro img{
+
+.microImg{
     width: 100%;
-    height: 500px;
-    padding: 10rem 5rem;
+    height: 550px;
+    padding: 2rem 1rem;
     border-radius: 55px;
     box-shadow: 0 13px 21px rgba(0,0,0,.34);
     backdrop-filter: rgba(153,153,153,.13);
     object-fit: contain;
-    ;
+    backdrop-filter: blur(80px);
 }
 
-.micro p {
+.microText{
     font-size: 3.4rem;
     font-weight: 600;
     color: #fff;

@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/api/singsing.tsx", "src/components/record/BottomNavBar.tsx", "src/pages/index.tsx", "src/utils/api.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/api/singsing.tsx", "src/components/record/BottomNavBar.tsx", "src/pages/index.tsx", "src/utils/api.ts", "src/components/home/Content1.tsx"],
   "exclude": ["node_modules"]
 }
