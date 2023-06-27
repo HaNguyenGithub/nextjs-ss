@@ -25,6 +25,17 @@
     padding-bottom: 10rem;
 }
 
+.zoom-in > div {
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 3rem;
+    line-height: 4.1rem;
+}
+
+/* Phone */
 .phone{
     width: 100% !important;
     display: flex;
@@ -32,8 +43,8 @@
 }
 
 .phone > div{
-    transform: translateX(0);
-    transition: all .5 ease-in-out;
+    /* transform: translateX(0);
+    transition: all .5 ease-in-out; */
     display: flex !important;
     flex-direction: column !important;
     position: relative !important;
@@ -41,8 +52,9 @@
 
 .phone > div > img {
     object-fit: contain;
-    height: 500px;
+    height: 450px;
     padding: 3rem;
+    padding-bottom: 0rem;
     padding-left: 5rem;
     padding-right: 5rem;
     vertical-align: middle;
@@ -51,18 +63,22 @@
 }
 
 .phone > div > p{
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
     color: #fff;
     margin: 0;
     padding-bottom: 3rem;
-    line-height: 4.1rem;
+    padding-top: 0.1rem;
+    line-height: 2.5rem;
 }
 
-.phone > div > div > img{
-    top: 25%;
-    right: -11%;
+.arrow{
+    top: 35%;
+    width: 35px;
+    height: 35px;
+    right: -5%;
     position: absolute !important;
     box-sizing: border-box;
 }
+
