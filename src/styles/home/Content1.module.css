@@ -52,7 +52,7 @@
 
 .phone > div > img {
     object-fit: contain;
-    height: 450px;
+    height: 450px!important;
     padding: 3rem;
     padding-bottom: 0rem;
     padding-left: 5rem;
