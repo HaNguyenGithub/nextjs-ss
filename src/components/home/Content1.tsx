@@ -55,7 +55,7 @@ export default function Content1() {
                   {item.text2}  
                 </p>
                 <div className={content.arrow}>
-                  {index < 3 && <img src="/screenshot/arrow.svg" />}
+                  {index < (data.length-1) && <img src="/screenshot/arrow.svg" />}
                 </div>
               </div>
                </Slide>

@@ -13,14 +13,14 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    font-family: 'Montserrat','Saira',sans-serif;
+    font-family: 'Montserrat','Saira',sans-serif!important;
     font-size: 1.6rem;
     padding-right: 85px;
     padding-left: 85px;
     padding-bottom: 10px;
 }
 
-.top div:first-child{
+.top > div{
     flex-grow: 1!important;
 }
 
@@ -128,25 +128,25 @@
 }
 
 
-.hidden_mobile img:first-child{
+.note{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
 }
 
-.hidden_mobile img:nth-child(2){
+.coin{
     position: absolute;
     bottom: 0;
-    left: -10;
+    left: -100px;
     width: 100%;
 }
 
-.hidden_mobile img:nth-child(3){
+.girl{
     position: absolute;
-    top: -10%;
+    top: -9%;
     bottom: -10;
-    right: -10%;
+    right: -12%;
     width: 65%;
 }
 
@@ -155,35 +155,46 @@
     opacity: 1;
     transition: all 2s ease-out;
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 35%;
+    left: 9%;
     font-family: 'Montserrat','Saira',sans-serif;
     color: #212529;
+    width: fit-content;
 }
 
 .text p{
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: -0.5rem;
+    margin-bottom: 1rem;
+    
 }
 
 .text h3{
-    font-size: 4.8rem;
+    font-size: 5rem;
     font-weight: 800;
-    line-height: 9rem;
-    margin: 0;
+    line-height: 4rem;
+    margin: -5px;
 }
 
 .text h4{
-    font-size: 5.8rem;
+    font-size: 4rem;
     font-weight: 500;
-    margin: 0;
+    margin: -5px;
 }
 
 .text h2{
-    font-size: 5.5rem;
+    font-size: 6rem;
     font-weight: 800;
-    line-height: 9rem;
-    margin: 0;
+    line-height: 4rem;
+    margin: -5px;
+}
+
+.gradient{
+    background: linear-gradient(180deg, rgba(80,0,0,0) 0, #000 100%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
 }

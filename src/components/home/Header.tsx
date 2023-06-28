@@ -1,6 +1,7 @@
 import { Box, Container, CssBaseline, Grid, Typography } from "@mui/material";
 import header from '../../styles/home/Header.module.css';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { Slide, Rotate, Fade } from "react-awesome-reveal";
 
 export default function Header(){
     return(
@@ -9,9 +10,9 @@ export default function Header(){
             <div>
             <div className={header.top}>
                     <div>
-                        <a href="#" className={header.a}>
+                            <a href="#" className={header.a}>
                             <img src="/logo_singsing.svg" alt="Logo SingSing"/>
-                        </a>
+                            </a>
                     </div>
                     <ul className={header.menu_hidden_mobile}>
                         <li className={header.dropdown}>
@@ -32,21 +33,36 @@ export default function Header(){
             {/* Image */}
             <div className={header.selection}>
                 <div className={header.yellow}>
+               
                     <div className={header.circle1}></div>
+                    
                     <div className={header.circle2}></div>
+                  
                 </div>
                 <div className={header.hidden_mobile}>
+                    <Slide direction="up" duration={2000}  className={header.note}>
                     <img src="/header/desktop/musicnote.png" alt="Music note"/>
-                    <img src="/header/desktop/coin.png" alt="Coin"/>
-                    <img src="/header/desktop/girl.png" alt="Girl"/>
+                    </Slide>
+                   
+                    <Slide direction="down" duration={1000}  className={header.coin}>
+                        <img src="/header/desktop/coin.png" alt="Coin"/>
+                    </Slide>
+                    <Slide direction="up" duration={500}  className={header.girl}>
+                        <img src="/header/desktop/girl.png" alt="Girl"/>
+                    </Slide>
+                   
                 </div>
                 <div className={header.text}>
-                    <p>SINGSING IS A WEB3 SOCIAL APP THAT</p>
-                    <h3>REWARDS</h3>
-                    <h4>USER FOR</h4>
-                    <h2>SINGING</h2>
+                    <Slide direction="down" duration={2000}>
+                        <div>
+                        <p>SINGSING IS A WEB3 SOCIAL APP THAT</p>
+                        <h3>REWARDS</h3>
+                        <h4>USER FOR</h4>
+                        <h2>SINGING</h2>
+                        </div>
+                    </Slide>
                 </div>
-                <div></div>
+                <div className={header.gradient}></div>
             </div>
             {/* End Image */}
         </header>
