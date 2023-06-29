@@ -1,200 +1,253 @@
 /* Nav */
-.bg > div:first-child{
-    padding-top: 8px;
-    height: 65px;
-    background: #181a20;
+.bg {
+  position: relative;
+  background: #ffc002;
+  min-height: 100vh;
+}
+.bg > div:first-child {
+  display: none;
 }
 
-.top{
-    position: relative;
-    margin: auto;
-    max-width: 1528px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    font-family: 'Montserrat','Saira',sans-serif!important;
-    font-size: 1.6rem;
-    padding-right: 85px;
-    padding-left: 85px;
-    padding-bottom: 10px;
+.top {
+  padding-top: 8px;
+  height: 60px;
+  background: #181a20;
 }
 
-.top > div{
-    flex-grow: 1!important;
+.container {
+  position: relative;
+  margin: auto;
+  max-width: 1228px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
-.link a img{
-    width: 130px;
-    height: 35px;
-    vertical-align: middle;
+.container > div {
+  flex-grow: 1 !important;
 }
 
-.header.menu_hidden_mobile{
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding-left: 0 !important;
-    color: #fff;
-    font-style: none;
-    margin-top: 5px;
+.a img {
+  width: 130px;
+  height: 35px;
+  vertical-align: middle;
 }
 
-.dropdown{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin: 0;
-    position: relative;
-    display: inline-block;
+.header.menu_hidden_mobile {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 0 !important;
+
+  margin-top: 5px;
+  list-style: none;
 }
 
-.button{
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: 8px;
+.dropdown {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
-.pt_2{
-    display: flex;
-    align-items: center;
-    font-family: 'Saira';
+.button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 8px;
+  overflow: visible;
+  line-height: 1.15;
+  margin: 0;
 }
 
-.dropdown_content img{
-    width: 22px;
-    height: 15px;
-    vertical-align: middle;
-    overflow: clip;
+.pt_2 {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Saira";
+  /* color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal; */
+  font-weight: 500;
+  font-size: 1.6rem;
 }
 
-.pt_2 span{
-    padding-left: 1rem;
-    padding-right: 0.5rem;
-    font-size: 1rem;
-    font-weight: 500;
+.dropdown_content img {
+  width: 22px;
+  height: 15px;
+  vertical-align: middle;
+  overflow: clip;
+  border-style: none;
 }
 
-.pt_2 i{
-    margin-bottom: 0.1rem;
-    font-weight: 900;
+.pt_2 span {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.pt_2 i {
+  margin-bottom: 0.1rem;
+  font-weight: 900;
 }
 
 /* Image */
-.selection{
-    width: 100%;
-    overflow: hidden;
-    height: 75vh;
-    position: relative;
-    box-sizing: border-box;
+.selection {
+  width: 100%;
+  overflow: hidden;
+  height: 95vh;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.yellow{
-    opacity: 1;
-    transition: all 2s ease-in-out;
-    position: relative;
+.yellow {
+  opacity: 1;
+  transform: scale(0.3);
+  transition: all 2s ease-in-out;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.circle1 {
+  width: 6100px;
+  height: 6100px;
+  background: #c90606;
+  mix-blend-mode: color-burn;
+  opacity: 1;
+  border-radius: 50%;
+  position: absolute;
+  left: 140%;
+  right: 140%;
+  transform: translate(-50%, -50%);
+}
+
+.bounce2{
+    width: 100%;
     height: 100%;
-    width: 100%;
-
 }
 
-.circle1{
-    width: 6100px;
-    height: 6100px;
-    background: #ffcd00;
-    mix-blend-mode: color-burn;
-    opacity: 1;
-    border-radius: 50%;
-    position: absolute;
-    left: 109%;
-    right: 109%;
-    transform: translate(-50%,-50%);
+.circle2 {
+  width: 2100px;
+  height: 2100px;
+  background: gold;
+  opacity: 1;
+  border-radius: 50%;
+  position: absolute;
+  right: -150%;
+  top: 105%;
+  transform: translate(-50%, -50%);
 }
 
-.circle2{
-    width: 2100px;
-    height: 2100px;
-    background: gold;
-    opacity: 1;
-    border-radius: 50%;
-    position: absolute;
-    right: -135%;
-    top: 95%;
-    transform: translate(-50%,-50%);
+.coin {
+  position: absolute;
 }
 
-
-.note{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+.hidden_mobile {
+  opacity: 1;
 }
 
-.coin{
-    position: absolute;
-    bottom: 0;
-    left: -100px;
-    width: 100%;
+.note {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: fit-content;
+  height: fit-content;
 }
 
-.girl{
-    position: absolute;
-    top: -9%;
-    bottom: -10;
-    right: -12%;
-    width: 65%;
+.note ing {
+  width: 100%;
 }
 
-.text{
-    height: 10%;
-    opacity: 1;
-    transition: all 2s ease-out;
-    position: absolute;
-    top: 35%;
-    left: 9%;
-    font-family: 'Montserrat','Saira',sans-serif;
-    color: #212529;
-    width: fit-content;
+.coin {
+  position: absolute;
+  bottom: -5%;
+  left: -8%;
+  width: fit-content;
+  height: fit-content;
 }
 
-.text p{
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    
+.coin img {
+  width: 85%;
 }
 
-.text h3{
-    font-size: 5rem;
-    font-weight: 800;
-    line-height: 4rem;
-    margin: -5px;
+.girl {
+  transition: all 2s ease-out;
+  position: absolute;
+  border-style: none;
+  vertical-align: middle;
+  top: -10%;
+  right: -40%;
+  transform: translateY(-10px);
+  transition: all 2s ease-out;
+  height: 100%;
+  width: 100%;
 }
 
-.text h4{
-    font-size: 4rem;
-    font-weight: 500;
-    margin: -5px;
+.girl img {
+  opacity: 1;
+  overflow: hidden;
 }
 
-.text h2{
-    font-size: 6rem;
-    font-weight: 800;
-    line-height: 4rem;
-    margin: -5px;
+.text {
+  height: 10%;
+  opacity: 1;
+  transition: all 2s ease-out;
+  position: absolute;
+  top: 35%;
+  left: 9%;
+  font-family: "Montserrat", "Saira", sans-serif;
+  color: #212529;
+  top: 48%;
 }
 
-.gradient{
-    background: linear-gradient(180deg, rgba(80,0,0,0) 0, #000 100%);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100px;
+.text p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.text h3 {
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 4rem;
+  margin: -5px;
+}
+
+.text h4 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  margin: -5px;
+}
+
+.text h2 {
+  font-size: 5.5rem;
+  font-weight: 800;
+  line-height: 4rem;
+  margin: -5px;
+}
+
+.gradient {
+  background: linear-gradient(180deg, rgba(80, 0, 0, 0) 0, #000 100%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
 }
