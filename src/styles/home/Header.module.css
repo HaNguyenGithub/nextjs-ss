@@ -4,8 +4,9 @@
   background: #ffc002;
   min-height: 100vh;
 }
-.bg > div:first-child {
-  display: none;
+
+.dawer{
+    display: none;
 }
 
 .top {
@@ -35,6 +36,10 @@
   width: 130px;
   height: 35px;
   vertical-align: middle;
+}
+
+.menu_hidden_desktop{
+    display: none;
 }
 
 .header.menu_hidden_mobile {
@@ -170,7 +175,7 @@
   height: fit-content;
 }
 
-.note ing {
+.note img {
   width: 100%;
 }
 
@@ -250,4 +255,339 @@
   right: 0;
   width: 100%;
   height: 100px;
+}
+
+/* @media */
+@media (max-width: 768px) {
+    .bg{
+        min-height: 100vh!important;
+    }
+
+    .container{
+        position: relative;
+        margin: auto;
+        max-width: 768px;
+        padding: 0 20px;
+    }
+
+    .a img{
+        width: 115px;
+        height: 33px;
+    }
+
+    .menu_hidden_mobile{
+        display: none;
+    }
+
+    .menu_hidden_desktop{
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 2rem;
+        justify-content: flex-end;
+       
+    }
+
+    .dawer{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80vw;
+        height: 100vh;
+        background: #0b0e11;
+        padding-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 2.2rem;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    .dawer > div:first-child{
+        display: flex;
+        justify-self: flex-end!important;
+        margin-bottom: 4rem;
+        justify-content: flex-end;
+    }
+
+    .close{
+        background: 0 0;
+        border: none;
+        text-align: right;
+        overflow: visible;
+        text-transform: none;  
+        
+    }
+
+    .close img{
+        vertical-align: middle;
+    }
+    .dawer ul{
+        list-style: none;
+        margin: 0;
+        padding-left: 0!important;
+        box-sizing: border-box;
+    }
+
+    .dawer ul li{
+        padding: 0;
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+    }
+
+    .button{
+        padding: 0;
+        width: 100%;
+        background: 0 0;
+        border: none;
+        text-align: left;
+        box-sizing: border-box;
+        border-radius: 10px;
+        overflow: visible;
+        line-height: 1.15;
+        margin: 0;
+    }
+
+    .pt_2{
+        width: 100%;
+        justify-content: space-between;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        font-family: Saira;
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+
+    .dropdown_content{
+        display: flex!important;
+        align-items: center!important;
+    }
+
+    .dropdown_content img{
+        margin-right: 1.6rem;
+        width: 22px;
+        height: 15px;
+        border-style: none;
+        vertical-align: middle;
+        box-sizing: border-box;
+    }
+
+    .dropdown_content span{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-family: Saira;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .pt_2_2{
+        padding-top: 0.5rem!important;
+        box-sizing: border-box;
+    }
+
+    .language{
+        display: block;
+        width: 100%;
+        background: #351a59;
+        position: absolute;
+        min-width: 160px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+        z-index: 1;
+    } 
+
+    .language a{
+        color: #fff;
+        padding-top: 15px!important;
+        padding-bottom: 15px!important;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 6px 30px;
+        background-color: transparent;
+    }
+
+    .language a:not(:first-child){
+        border-top: 1px solid #f3f3f3;
+    }
+
+    /* Image note - coin - girl */
+
+    .note{
+      position: absolute;
+      bottom:25%;
+      left: 0;
+    }
+
+    .girl{
+      position:absolute;
+      width: 60%;
+      height: 110%;
+      bottom:  0;
+      right: -32%;
+    }
+
+    .girl img{
+      width: 75%;
+      position: absolute;
+      bottom: 0;
+      
+    }
+
+    .coin{
+        position: absolute;
+        bottom: -15%;
+        width: 150%;
+        left: -8%!important;
+    }
+
+    .coin img{
+      width: 5000px;
+    }
+
+    .text{
+      opacity: 1;
+      transition: all 2s ease-out;
+      position: absolute;
+      left: 28%;
+      font-family: "Montserrat", "Saira", sans-serif;
+      color: #212529;
+      top: 35%;
+      text-align: center;
+    }
+
+    .text p {
+      font-size: 1rem;
+      font-weight: 780;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    
+    .text h3 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      line-height: 2.5rem;
+      margin: -5px;
+    }
+    
+    .text h4 {
+      font-size: 2.8rem;
+      font-weight: 500;
+      margin: -5px;
+    }
+    
+    .text h2 {
+      font-size: 4.2rem;
+      font-weight: 800;
+      line-height: 2.5rem;
+      margin: -5px;
+    }
+
+    .circle1 {
+      background: #ffcd00;
+    }
+    
+    .circle2 {
+      background: gold;
+      left: 45%;
+      top: 105%;
+    }
+
+}
+
+@media (max-width: 425px){
+  .text{
+    opacity: 1;
+    transition: all 2s ease-out;
+    position: absolute;
+    left: 15%;
+    font-family: "Montserrat", "Saira", sans-serif;
+    color: #212529;
+    top: 22%;
+    text-align: center;
+  }
+
+  .girl{
+    position:absolute;
+    width: 80%;
+    height: 110%;
+    bottom:  0;
+    right: 8%;
+  }
+
+  .girl img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    
+  }
+
+  .coin{
+    position: absolute;
+    bottom: -9%;
+    width: 150%;
+    left: -5%!important;
+}
+}
+
+@media (max-width: 320px){
+  .girl{
+    position:absolute;
+    width: 100%;
+    height: 110%;
+    bottom:  0;
+    left: 2%;
+    right: 5%;
+  }
+
+  .girl img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    
+  }
+
+  .text{
+    opacity: 1;
+    transition: all 2s ease-out;
+    position: absolute;
+    left: 10%;
+    font-family: "Montserrat", "Saira", sans-serif;
+    color: #212529;
+    top: 22%;
+    text-align: center;
+  }
+
+  .text p {
+    font-size: 0.8rem;
+    font-weight: 780;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .text h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+    margin: -5px;
+  }
+  
+  .text h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: -5px;
+  }
+  
+  .text h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+    margin: -5px;
+  }
 }
