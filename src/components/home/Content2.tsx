@@ -29,7 +29,7 @@ export default function Content2(){
                 
                 <Swiper
                         effect={"coverflow"}
-                        grabCursor={false}
+                        grabCursor={true}
                         loop={true}
                         speed={200}
                         allowTouchMove={true}

@@ -132,7 +132,7 @@
 .circle1 {
   width: 6100px;
   height: 6100px;
-  background: #c90606;
+  background: #ffcd00;
   mix-blend-mode: color-burn;
   opacity: 1;
   border-radius: 50%;
@@ -437,7 +437,6 @@
       width: 75%;
       position: absolute;
       bottom: 0;
-      
     }
 
     .coin{
